@@ -72,7 +72,7 @@ class DDNSUtils(object):
         @return  IP address or None
         """
         try:
-            ret = requests.get("http://httpbin.org/ip")
+            ret = requests.get("http://v4.ipv6-test.com/api/myip.php")
         except requests.RequestException as ex:
             cls.err("network problem:{0}".format(ex))
             return None
